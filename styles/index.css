@@ -1,0 +1,42 @@
+
+@media screen and (max-width: 576px) {
+    .navbar-end {
+        display: none; 
+    }
+    .navbar-start {
+        text-align: center; 
+    }
+    .dropdown {
+        position: relative;
+    }
+    .dropdown-button {
+        padding: 8px 16px;
+        background-color: transparent;
+        border: none;
+        color: #fff;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    .dropdown ul {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #f9f9f9;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: none; /* Hide the list inside the dropdown by default on mobile */
+        width: 100%;
+        border-radius: 0 0 15px 15px;
+    }
+    .dropdown.active ul {
+        display: block; /* Display the list when the dropdown is active */
+    }
+    .dropdown ul li {
+        padding: 8px;
+        border-bottom: 1px solid #ccc;
+    }
+    .dropdown ul li:last-child {
+        border-bottom: none;
+    }
+}
